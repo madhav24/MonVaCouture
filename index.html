@@ -1,0 +1,499 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MonVa Couture | Elegance in Every Detail</title>
+<meta name="description" content="MonVa Couture - Beautiful blouse stitching, saree modernisation, custom dresses, kidswear and more.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --burgundy: #641d30;
+  --gold: #b58a45;
+  --pink: #f8e5df;
+  --cream: #fffaf5;
+  --text: #493139;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text);
+  background: var(--cream);
+  line-height: 1.7;
+}
+
+h1,h2,h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--burgundy);
+}
+
+header {
+  background: rgba(255,250,245,.96);
+  padding: 14px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 15px #641d3010;
+}
+
+.brand {
+  font-family: 'Playfair Display', serif;
+  color: var(--burgundy);
+  font-size: 29px;
+  font-weight: 600;
+}
+
+.brand span { color: var(--gold); }
+
+nav { display: flex; gap: 24px; }
+
+nav a {
+  color: var(--burgundy);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+nav a:hover { color: var(--gold); }
+
+.hero {
+  min-height: 610px;
+  display: flex;
+  align-items: center;
+  padding: 80px 9%;
+  background:
+    linear-gradient(90deg, rgba(255,246,239,.97), rgba(255,246,239,.75)),
+    url('hero.jpg') center/cover;
+}
+
+.hero-content { max-width: 650px; }
+
+.eyebrow {
+  color: var(--gold);
+  letter-spacing: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: clamp(43px, 6vw, 72px);
+  line-height: 1.15;
+  margin: 20px 0;
+}
+
+.hero p { max-width: 520px; margin-bottom: 30px; }
+
+.btn {
+  display: inline-block;
+  background: var(--burgundy);
+  color: white;
+  padding: 13px 25px;
+  border-radius: 3px;
+  text-decoration: none;
+  margin: 5px;
+  font-size: 13px;
+  transition: .3s;
+}
+
+.btn:hover { background: var(--gold); }
+
+.btn-outline {
+  background: transparent;
+  color: var(--burgundy);
+  border: 1px solid var(--burgundy);
+}
+
+section { padding: 75px 8%; }
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-heading h2 { font-size: 39px; }
+
+.section-heading p { color: #806b70; margin-top: 8px; }
+
+.about {
+  text-align: center;
+  background: var(--pink);
+}
+
+.about p {
+  max-width: 780px;
+  margin: 20px auto;
+}
+
+.services {
+  background: var(--cream);
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 22px;
+}
+
+.service-card {
+  padding: 30px 22px;
+  background: white;
+  border: 1px solid #ead8ca;
+  text-align: center;
+  transition: .3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px #641d3012;
+}
+
+.service-icon {
+  font-size: 35px;
+  margin-bottom: 12px;
+}
+
+.service-card h3 { font-size: 22px; margin-bottom: 10px; }
+
+.service-card p { font-size: 13px; color: #806b70; }
+
+.service-card a {
+  display: inline-block;
+  margin-top: 18px;
+  color: var(--gold);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.special {
+  background: var(--burgundy);
+  color: white;
+  text-align: center;
+}
+
+.special h2 { color: #e9c58b; font-size: 38px; }
+.special p { max-width: 700px; margin: 18px auto; }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 18px;
+}
+
+.gallery-item {
+  background: var(--pink);
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  color: var(--burgundy);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.gallery-item span { padding: 20px; }
+
+.steps {
+  background: var(--pink);
+  text-align: center;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.step {
+  padding: 20px;
+}
+
+.step strong {
+  display: block;
+  font-family: 'Playfair Display',serif;
+  font-size: 34px;
+  color: var(--gold);
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact-box {
+  background: white;
+  border: 1px solid #ead8ca;
+  padding: 40px 20px;
+  max-width: 650px;
+  margin: auto;
+}
+
+.contact-box p { margin: 15px 0; }
+
+footer {
+  background: var(--burgundy);
+  color: white;
+  text-align: center;
+  padding: 35px 15px;
+}
+
+footer strong {
+  font-family: 'Playfair Display',serif;
+  font-size: 27px;
+}
+
+footer p { font-size: 12px; margin-top: 10px; }
+
+.whatsapp {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  background: #25D366;
+  color: white;
+  padding: 13px 19px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 200;
+  box-shadow: 0 4px 15px #0002;
+}
+
+@media(max-width:700px) {
+  header { flex-direction: column; gap: 10px; }
+  nav { gap: 13px; flex-wrap: wrap; justify-content: center; }
+  nav a { font-size: 11px; }
+  .hero { min-height: 530px; padding: 65px 7%; }
+  section { padding: 55px 6%; }
+  .section-heading h2 { font-size: 32px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">Mon<span>Va</span> Couture</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="eyebrow">Welcome to MonVa Couture</div>
+    <h1>Elegance in Every Detail</h1>
+    <p>
+      Where creativity meets craftsmanship.
+      Discover beautiful custom stitching, timeless
+      designs and personalised fashion for every occasion.
+    </p>
+    <a class="btn" href="#services">Explore Our Services</a>
+    <a class="btn btn-outline"
+       href="https://wa.me/917989505464?text=Hello%20MonVa%20Couture">
+       Enquire Now
+    </a>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="section-heading">
+    <div class="eyebrow">Our Story</div>
+    <h2>Made With Love & Precision</h2>
+  </div>
+  <p>
+    At MonVa Couture, every outfit tells a story.
+    We believe that the perfect fit and thoughtful detailing
+    make every creation special. From traditional elegance
+    to modern styles, we bring your fashion ideas to life
+    with care, creativity and attention to detail.
+  </p>
+  <p><em>Elegance in every detail.</em></p>
+</section>
+
+<section class="services" id="services">
+  <div class="section-heading">
+    <div class="eyebrow">What We Offer</div>
+    <h2>Our Services</h2>
+    <p>Beautifully crafted outfits, personalised just for you.</p>
+  </div>
+
+  <div class="service-grid">
+
+    <div class="service-card">
+      <div class="service-icon">🧵</div>
+      <h3>Pico & Fall</h3>
+      <p>Neat finishing and professional saree edging services.</p>
+      <a href="https://wa.me/917989505464?text=I%20am%20interested%20in%20Pico%20and%20Fall">
+        Enquire for price →
+      </a>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">👗</div>
+      <h3>Blouse Stitching</h3>
+      <p>Custom-fitted blouses with beautiful patterns and detailing.</p>
+      <a href="https://wa.me/917989505464?text=I%20am%20interested%20in%20Blouse%20Stitching">
+        Enquire for price →
+      </a>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">✨</div>
+      <h3>Chudidars</h3>
+      <p>Comfortable, elegant and perfectly tailored ethnic wear.</p>
+      <a href="https://wa.me/917989505464?text=I%20am%20interested%20in%20Chudidar%20Stitching">
+        Enquire for price →
+      </a>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🌸</div>
+      <h3>Long Frocks</h3>
+      <p>Graceful designs for celebrations and special occasions.</p>
+      <a href="https://wa.me/917989505464?text=I%20am%20interested%20in%20Long%20Frocks">
+        Enquire for price →
+      </a>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🧸</div>
+      <h3>Kids Wear</h3>
+      <p>Adorable, comfortable outfits made for little ones.</p>
+      <a href="https://wa.me/917989505464?text=I%20am%20interested%20in%20Kids%20Wear">
+        Enquire for price →
+      </a>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">💖</div>
+      <h3>Custom Designs</h3>
+      <p>Personalised outfits tailored to your ideas and preferences.</p>
+      <a href="https://wa.me/917989505464?text=I%20want%20a%20custom%20design">
+        Enquire now →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section class="special">
+  <div class="eyebrow">Our Speciality</div>
+  <h2>Saree Transformation Studio</h2>
+  <p>
+    Give your old sarees a beautiful new life!
+    Modernising old sarees is our speciality.
+    Transform treasured fabrics into stylish,
+    contemporary outfits with a touch of elegance.
+  </p>
+  <a class="btn" href="https://wa.me/917989505464?text=I%20want%20to%20modernise%20my%20old%20saree">
+    Transform My Saree
+  </a>
+</section>
+
+<section id="gallery">
+  <div class="section-heading">
+    <div class="eyebrow">Our Creations</div>
+    <h2>Design Gallery</h2>
+    <p>A glimpse of our craftsmanship and creativity.</p>
+  </div>
+
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="gallery1.jpg" alt="Designer blouse">
+    </div>
+    <div class="gallery-item">
+      <img src="gallery2.jpg" alt="Custom dress">
+    </div>
+    <div class="gallery-item">
+      <img src="gallery3.jpg" alt="Kids fashion">
+    </div>
+    <div class="gallery-item">
+      <img src="gallery4.jpg" alt="Saree transformation">
+    </div>
+  </div>
+</section>
+
+<section class="steps">
+  <div class="section-heading">
+    <div class="eyebrow">Simple & Convenient</div>
+    <h2>How To Order</h2>
+  </div>
+
+  <div class="steps-grid">
+    <div class="step">
+      <strong>01</strong>
+      <h3>Choose</h3>
+      <p>Select your desired service.</p>
+    </div>
+    <div class="step">
+      <strong>02</strong>
+      <h3>Connect</h3>
+      <p>Message us on WhatsApp.</p>
+    </div>
+    <div class="step">
+      <strong>03</strong>
+      <h3>Customise</h3>
+      <p>Discuss your design and measurements.</p>
+    </div>
+    <div class="step">
+      <strong>04</strong>
+      <h3>Celebrate</h3>
+      <p>Enjoy your beautifully crafted outfit.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="section-heading">
+    <div class="eyebrow">Let's Create Something Beautiful</div>
+    <h2>Get In Touch</h2>
+  </div>
+
+  <div class="contact-box">
+    <h3>MonVa Couture</h3>
+    <p>Have a design in mind? We would love to hear from you.</p>
+    <p><strong>WhatsApp:</strong> +91 79895 05464</p>
+    <a class="btn"
+       href="https://wa.me/917989505464?text=Hello%20MonVa%20Couture%2C%20I%20would%20like%20to%20enquire">
+       Message Us on WhatsApp
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <strong>MonVa Couture</strong>
+  <p>Elegance in Every Detail</p>
+  <p>© 2026 MonVa Couture. All Rights Reserved.</p>
+</footer>
+
+<a class="whatsapp"
+   href="https://wa.me/917989505464?text=Hello%20MonVa%20Couture"
+   target="_blank" rel="noopener">
+   WhatsApp Us
+</a>
+
+</body>
+</html>

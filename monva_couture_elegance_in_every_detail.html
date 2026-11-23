@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MonVa Couture — Elegance in Every Detail</title>
+  <meta name="description" content="MonVa Couture: From timeless tradition to modern elegance, we craft, stitch and transform with love. Modernising old sarees is our specialty!" />
+
+  <!-- Google Fonts: Cormorant Garamond, Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            maroon: {
+              DEFAULT: '#661329',
+              dark: '#4A0B1B',
+              light: '#841B37',
+              soft: '#F4DCE0',
+            },
+            blush: {
+              light: '#FCEEE6',
+              mid: '#FADFD5',
+              deep: '#F7D4CB',
+            },
+            gold: {
+              DEFAULT: '#C69B56',
+              light: '#E5C68B',
+              champagne: '#D8B476',
+              dark: '#9E7638',
+            },
+            cream: {
+              DEFAULT: '#FDF4EE',
+              warm: '#FAF0E8',
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', '"Playfair Display"', 'Georgia', 'serif'],
+            display: ['"Playfair Display"', '"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            'couture': '0 14px 35px -8px rgba(102, 19, 41, 0.14)',
+            'emblem': '0 12px 30px rgba(102, 19, 41, 0.22)',
+            'pill': '0 6px 20px rgba(102, 19, 41, 0.25)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --maroon: #661329;
+      --maroon-dark: #4A0B1B;
+      --blush-start: #FCEEE6;
+      --blush-end: #F7D4CB;
+      --gold: #C69B56;
+      --gold-champagne: #D8B476;
+      --cream: #FDF4EE;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--maroon-dark);
+      background-color: var(--blush-start);
+      overflow-x: hidden;
+    }
+
+    /* Watercolor & Silk Ambient Hero Canvas */
+    .hero-canvas {
+      background:
+        radial-gradient(circle at 12% 28%, rgba(244, 200, 194, 0.65) 0%, transparent 45%),
+        radial-gradient(circle at 46% 18%, rgba(255, 250, 246, 0.9) 0%, transparent 42%),
+        radial-gradient(circle at 82% 45%, rgba(235, 194, 178, 0.55) 0%, transparent 52%),
+        radial-gradient(circle at 14% 72%, rgba(242, 193, 187, 0.55) 0%, transparent 42%),
+        linear-gradient(135deg, #FCEEE6 0%, #FBE5DC 48%, #F7D4CB 100%);
+    }
+
+    /* Subtle watercolor mottling overlay */
+    .watercolor-texture {
+      background-image:
+        radial-gradient(ellipse at 20% 40%, rgba(214, 152, 148, 0.14) 0%, transparent 55%),
+        radial-gradient(ellipse at 35% 65%, rgba(255, 255, 255, 0.55) 0%, transparent 50%),
+        radial-gradient(ellipse at 75% 25%, rgba(216, 180, 118, 0.12) 0%, transparent 45%);
+    }
+
+    /* Gold shimmer border & gradient */
+    .gold-gradient-border {
+      border: 1.5px solid #C69B56;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.65);
+    }
+
+    /* Circular Brand Emblem Styling */
+    .emblem-circle {
+      background:
+        radial-gradient(circle at 32% 35%, rgba(255, 251, 248, 0.96) 0%, rgba(252, 236, 229, 0.92) 55%, rgba(235, 185, 178, 0.95) 100%);
+      box-shadow:
+        0 10px 28px rgba(74, 11, 27, 0.18),
+        inset 0 0 0 2px #C69B56,
+        inset 0 0 0 5px rgba(253, 244, 238, 0.85),
+        inset 0 0 0 6px rgba(198, 155, 86, 0.55);
+    }
+
+    /* Services Strip Vertical Dividers on Desktop */
+    @media (min-width: 768px) {
+      .service-item:not(:last-child) {
+        border-right: 1px solid rgba(198, 155, 86, 0.45);
+      }
+    }
+
+    /* Hover transition for service medallions */
+    .service-item:hover .medallion {
+      transform: translateY(-3px) scale(1.04);
+      background-color: #661329;
+      border-color: #661329;
+      box-shadow: 0 8px 18px rgba(102, 19, 41, 0.25);
+    }
+    .service-item:hover .medallion svg {
+      color: #FDF4EE;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 9px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FCEEE6;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #C69B56;
+      border-radius: 999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #661329;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-maroon selection:text-white">
+
+  <!-- =====================================================================
+       1. TOP ANNOUNCEMENT & CONTACT BAR (DEEP MAROON #661329)
+       ===================================================================== -->
+  <div class="relative z-40 bg-gradient-to-r from-[#560D20] via-[#661329] to-[#560D20] text-cream border-b border-gold/30">
+    <div class="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 h-11 sm:h-12 flex items-center justify-between text-xs sm:text-sm">
+
+      <!-- Left Spacer on Desktop to Keep Tagline Centered -->
+      <div class="hidden lg:block lg:w-1/4"></div>
+
+      <!-- Center Tagline with Gold Diamond & Line Filigree Dividers -->
+      <div class="flex items-center justify-center gap-2 sm:gap-4 mx-auto lg:mx-0">
+        <!-- Left Filigree -->
+        <svg class="w-12 sm:w-20 h-3 text-gold-champagne shrink-0" viewBox="0 0 90 12" fill="none" aria-hidden="true">
+          <line x1="0" y1="6" x2="48" y2="6" stroke="url(#goldLineL)" stroke-width="1"/>
+          <polygon points="56,6 60,2 64,6 60,10" fill="#D8B476"/>
+          <polygon points="69,6 74,1.5 79,6 74,10.5" fill="#E5C68B"/>
+          <polygon points="84,6 87,3 90,6 87,9" fill="#D8B476"/>
+          <defs>
+            <linearGradient id="goldLineL" x1="0" y1="6" x2="48" y2="6" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#D8B476" stop-opacity="0"/>
+              <stop offset="1" stop-color="#D8B476"/>
+            </linearGradient>
+          </defs>
+        </svg>
+
+        <p class="font-serif italic tracking-wide text-sm sm:text-base md:text-lg text-[#FFF9F5] whitespace-nowrap">
+          Stitch <span class="mx-1.5 sm:mx-2.5 text-gold-champagne not-italic">•</span> Style <span class="mx-1.5 sm:mx-2.5 text-gold-champagne not-italic">•</span> Transform
+        </p>
+
+        <!-- Right Filigree -->
+        <svg class="w-12 sm:w-20 h-3 text-gold-champagne shrink-0" viewBox="0 0 90 12" fill="none" aria-hidden="true">
+          <polygon points="0,6 3,3 6,6 3,9" fill="#D8B476"/>
+          <polygon points="11,6 16,1.5 21,6 16,10.5" fill="#E5C68B"/>
+          <polygon points="26,6 30,2 34,6 30,10" fill="#D8B476"/>
+          <line x1="42" y1="6" x2="90" y2="6" stroke="url(#goldLineR)" stroke-width="1"/>
+          <defs>
+            <linearGradient id="goldLineR" x1="42" y1="6" x2="90" y2="6" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#D8B476"/>
+              <stop offset="1" stop-color="#D8B476" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <!-- Right Contact Links: Phone + WhatsApp -->
+      <div class="hidden sm:flex items-center justify-end gap-3 lg:w-1/4 text-xs sm:text-sm font-medium">
+        <a href="tel:7989505464" class="flex items-center gap-1.5 text-[#FFF8F3] hover:text-gold-light transition-colors">
+          <svg class="w-4 h-4 text-gold-champagne" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/>
+          </svg>
+          <span class="tracking-wide">7989505464</span>
+        </a>
+
+        <span class="h-4 w-px bg-gold-champagne/45" aria-hidden="true"></span>
+
+        <a href="https://wa.me/917989505464?text=Hello%20MonVa%20Couture!%20I%20would%20like%20to%20enquire%20about%20custom%20stitching%20and%20saree%20revamp%20services." target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-[#FFF8F3] hover:text-gold-light transition-colors group">
+          <span class="w-5 h-5 rounded-full bg-[#25D366] flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+            <svg class="w-3.5 h-3.5 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.758.459 3.475 1.331 4.988L2 22l5.188-1.361a9.927 9.927 0 004.843 1.26h.004c5.515 0 9.969-4.453 9.969-9.969 0-2.663-1.037-5.167-2.92-7.05A9.904 9.904 0 0012.031 2zm5.822 14.262c-.246.693-1.43 1.326-1.984 1.409-.508.076-1.151.108-1.857-.116-.428-.136-.978-.318-1.682-.622-2.96-1.278-4.893-4.258-5.041-4.455-.148-.197-1.204-1.602-1.204-3.056 0-1.454.762-2.169 1.033-2.464.271-.296.591-.37.788-.37.197 0 .394.002.566.01.182.009.426-.069.666.508.246.591.837 2.045.911 2.193.074.148.123.32.025.517-.099.197-.148.32-.296.493-.148.172-.311.385-.444.517-.148.148-.302.308-.13.604.172.296.766 1.264 1.645 2.047 1.131 1.008 2.084 1.321 2.38 1.469.296.148.468.123.64-.074.172-.197.739-.862.936-1.158.197-.296.394-.246.665-.148.271.099 1.725.813 2.021.961.296.148.493.222.566.345.074.123.074.714-.172 1.407z"/>
+            </svg>
+          </span>
+          <span>Chat on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       2. HERO & HEADER WRAPPER (MATCHING EXACT BOUTIQUE COMPOSITION)
+       ===================================================================== -->
+  <div class="relative hero-canvas watercolor-texture overflow-hidden">
+
+    <!-- Left Decorative Rose-Gold Botanical Vine Illustration -->
+    <svg class="hidden sm:block absolute left-0 top-[145px] lg:top-[165px] w-28 lg:w-36 h-[420px] text-maroon/40 pointer-events-none z-10" viewBox="0 0 140 430" fill="none" aria-hidden="true">
+      <!-- Main graceful stem -->
+      <path d="M-8 380 C 12 310, 32 245, 36 165 C 40 95, 34 45, 35 12" stroke="#B66B70" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M18 265 C 48 232, 74 214, 114 202" stroke="#B66B70" stroke-width="1" stroke-linecap="round"/>
+      <!-- Botanical Leaves -->
+      <path d="M35 15 C 28 32, 32 45, 36 52 C 42 42, 43 28, 35 15 Z" fill="#E8B8B5" fill-opacity="0.45" stroke="#B66B70" stroke-width="1"/>
+      <path d="M36 56 C 18 46, 8 34, 6 20 C 20 26, 30 38, 36 56 Z" fill="#E8B8B5" fill-opacity="0.4" stroke="#B66B70" stroke-width="1"/>
+      <path d="M37 78 C 52 65, 66 60, 82 62 C 70 74, 54 80, 37 78 Z" fill="#E8B8B5" fill-opacity="0.45" stroke="#B66B70" stroke-width="1"/>
+      <path d="M36 96 C 18 85, 6 72, 2 56 C 18 64, 29 77, 36 96 Z" fill="#E8B8B5" fill-opacity="0.4" stroke="#B66B70" stroke-width="1"/>
+      <path d="M36 122 C 54 108, 70 103, 88 106 C 74 119, 56 125, 36 122 Z" fill="#E8B8B5" fill-opacity="0.45" stroke="#B66B70" stroke-width="1"/>
+      <path d="M35 144 C 16 132, 4 118, 0 100 C 17 110, 28 124, 35 144 Z" fill="#E8B8B5" fill-opacity="0.4" stroke="#B66B70" stroke-width="1"/>
+      <path d="M33 175 C 52 162, 68 158, 86 162 C 70 174, 52 179, 33 175 Z" fill="#E8B8B5" fill-opacity="0.45" stroke="#B66B70" stroke-width="1"/>
+      <path d="M29 205 C 12 194, 2 180, -2 164 C 14 173, 24 186, 29 205 Z" fill="#E8B8B5" fill-opacity="0.4" stroke="#B66B70" stroke-width="1"/>
+      <!-- Secondary branch leaves -->
+      <path d="M62 224 C 72 208, 86 198, 102 195 C 93 210, 79 220, 62 224 Z" fill="#E8B8B5" fill-opacity="0.45" stroke="#B66B70" stroke-width="1"/>
+      <path d="M74 218 C 90 218, 104 222, 118 230 C 102 232, 87 228, 74 218 Z" fill="#E8B8B5" fill-opacity="0.4" stroke="#B66B70" stroke-width="1"/>
+      <path d="M44 242 C 52 226, 64 216, 78 212 C 70 227, 58 237, 44 242 Z" fill="#E8B8B5" fill-opacity="0.45" stroke="#B66B70" stroke-width="1"/>
+      <path d="M22 256 C 6 244, -4 230, -6 214 C 9 224, 18 238, 22 256 Z" fill="#E8B8B5" fill-opacity="0.4" stroke="#B66B70" stroke-width="1"/>
+      <path d="M12 296 C 30 284, 46 280, 64 284 C 48 296, 31 300, 12 296 Z" fill="#E8B8B5" fill-opacity="0.45" stroke="#B66B70" stroke-width="1"/>
+    </svg>
+
+    <!-- ===================================================================
+         3. MAIN NAVIGATION HEADER & OVERLAPPING CIRCULAR EMBLEM
+         =================================================================== -->
+    <header class="relative z-30">
+      <div class="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12 relative">
+        <div class="flex items-center justify-between min-h-[76px] lg:min-h-[84px]">
+
+          <!-- Overlapping Circular Brand Emblem (Extending from Top Bar into Hero) -->
+          <a href="#home" aria-label="MonVa Couture Home" class="relative z-40 -mt-5 sm:-mt-8 lg:-mt-9 shrink-0 group focus:outline-none">
+            <div class="emblem-circle w-28 h-28 sm:w-36 sm:h-36 lg:w-44 lg:h-44 rounded-full flex flex-col items-center justify-center relative overflow-hidden transition-transform duration-300 group-hover:scale-[1.03]">
+
+              <!-- Right-side draped rose-silk fabric texture accent inside emblem -->
+              <svg class="absolute right-0 top-0 h-full w-1/3 opacity-55 pointer-events-none" viewBox="0 0 60 180" fill="none" aria-hidden="true">
+                <path d="M25 0 C 45 45, 10 95, 38 140 C 48 156, 40 172, 30 180 L 60 180 L 60 0 Z" fill="url(#silkDrape)"/>
+                <path d="M35 0 C 52 50, 20 100, 45 148" stroke="#C69B56" stroke-width="1.2" stroke-opacity="0.65"/>
+                <path d="M22 10 C 38 60, 12 105, 34 155" stroke="#9D4B5A" stroke-width="1" stroke-opacity="0.45"/>
+                <defs>
+                  <linearGradient id="silkDrape" x1="20" y1="0" x2="60" y2="180" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#E7A7A2"/>
+                    <stop offset="0.5" stop-color="#D48482"/>
+                    <stop offset="1" stop-color="#B96568"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+
+              <!-- Minimalist Couture Silhouette & Botanical Accent + MV Monogram -->
+              <div class="relative z-10 flex flex-col items-center text-center px-2 pt-1">
+                <!-- Fashion Silhouette + MV Monogram SVG -->
+                <svg class="w-16 h-12 sm:w-20 sm:h-14 lg:w-24 lg:h-16" viewBox="0 0 120 78" fill="none" aria-hidden="true">
+                  <!-- Delicate floral sprig left of M -->
+                  <path d="M26 56 C 20 44, 18 32, 22 20" stroke="#B66B70" stroke-width="0.9"/>
+                  <ellipse cx="18" cy="38" rx="3.5" ry="1.8" transform="rotate(-35 18 38)" fill="#E3A5A1"/>
+                  <ellipse cx="24" cy="30" rx="3.5" ry="1.8" transform="rotate(30 24 30)" fill="#E3A5A1"/>
+                  <ellipse cx="19" cy="24" rx="3" ry="1.5" transform="rotate(-25 19 24)" fill="#E3A5A1"/>
+
+                  <!-- Minimalist Saree Woman Line-Art Silhouette above V -->
+                  <circle cx="62" cy="11" r="3.2" stroke="#9C5A5E" stroke-width="1.1"/>
+                  <path d="M62 15 C 57 18, 56 25, 58 32 L 54 58 M62 15 C 67 18, 68 25, 65 32 L 69 58" stroke="#9C5A5E" stroke-width="1.1" stroke-linecap="round"/>
+                  <path d="M57 20 C 62 26, 66 34, 62 46" stroke="#C69B56" stroke-width="1.1" stroke-linecap="round"/>
+
+                  <!-- Serif 'M' in Deep Maroon -->
+                  <text x="27" y="56" font-family="'Cormorant Garamond', Georgia, serif" font-weight="700" font-size="38" fill="#661329">M</text>
+
+                  <!-- Artistic Golden 'V' Flourish -->
+                  <path d="M56 32 L 66 57 L 78 27 C 80 23, 84 22, 87 24" stroke="#C69B56" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M54 32 L 60 32" stroke="#C69B56" stroke-width="1.6" stroke-linecap="round"/>
+                </svg>
+
+                <!-- Brand Name inside Circle -->
+                <div class="font-serif font-bold text-maroon text-base sm:text-xl lg:text-[23px] leading-none tracking-tight -mt-1">
+                  Mon<span class="text-gold-dark">V</span>a
+                </div>
+
+                <!-- COUTURE tracked subtitle -->
+                <div class="flex items-center gap-1 mt-0.5">
+                  <span class="w-2.5 sm:w-3.5 h-[0.75px] bg-gold"></span>
+                  <span class="text-[7px] sm:text-[8.5px] lg:text-[9.5px] font-semibold tracking-[0.26em] text-maroon/90 uppercase">COUTURE</span>
+                  <span class="w-2.5 sm:w-3.5 h-[0.75px] bg-gold"></span>
+                </div>
+
+                <!-- Tagline inside Circle -->
+                <p class="font-serif italic text-[7.5px] sm:text-[9px] lg:text-[10.5px] text-maroon/85 mt-0.5">
+                  Elegance in every detail
+                </p>
+
+                <!-- Tiny Gold Diamond Flourish -->
+                <div class="flex items-center gap-1 mt-0.5 text-gold text-[7px]" aria-hidden="true">
+                  <span>✦</span><span>◆</span><span>✦</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Navigation Strip (Cream/Blush bar with subtle gold bottom border) -->
+          <div class="flex-1 flex items-center justify-end lg:justify-between lg:pl-10 xl:pl-14 border-b border-gold/45 py-3.5 sm:py-4 bg-cream/55 lg:bg-transparent backdrop-blur-[2px] lg:backdrop-blur-none rounded-r-2xl lg:rounded-none">
+
+            <!-- Desktop Navigation Links -->
+            <nav aria-label="Primary Navigation" class="hidden lg:flex items-center gap-5 xl:gap-8">
+              <a href="#home" class="px-5 py-1.5 rounded-full bg-maroon text-white font-serif text-[17px] font-medium tracking-wide shadow-sm transition-all hover:bg-maroon-dark">
+                Home
+              </a>
+
+              <!-- Our Services Dropdown -->
+              <div class="relative" id="servicesDropdownWrapper">
+                <button
+                  type="button"
+                  id="servicesDropdownBtn"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  class="flex items-center gap-1.5 font-serif text-[17px] font-medium text-maroon hover:text-gold-dark transition-colors py-1.5 focus:outline-none">
+                  <span>Our Services</span>
+                  <svg id="servicesChevron" class="w-3.5 h-3.5 text-maroon transition-transform duration-200" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+
+                <!-- Dropdown Menu -->
+                <div
+                  id="servicesDropdownMenu"
+                  role="menu"
+                  class="hidden absolute left-0 mt-2.5 w-64 rounded-2xl bg-cream border border-gold/60 shadow-couture py-2.5 z-50">
+                  <a href="#services" role="menuitem" class="block px-4 py-2 text-sm font-medium text-maroon hover:bg-blush-mid/70 transition-colors">1. Saree Pico &amp; Falls</a>
+                  <a href="#services" role="menuitem" class="block px-4 py-2 text-sm font-medium text-maroon hover:bg-blush-mid/70 transition-colors">2. Designer Blouse Stitching</a>
+                  <a href="#services" role="menuitem" class="block px-4 py-2 text-sm font-medium text-maroon hover:bg-blush-mid/70 transition-colors">3. Chudidar &amp; Salwar Stitching</a>
+                  <a href="#services" role="menuitem" class="block px-4 py-2 text-sm font-medium text-maroon hover:bg-blush-mid/70 transition-colors">4. Long Frocks &amp; Anarkalis</a>
+                  <a href="#services" role="menuitem" class="block px-4 py-2 text-sm font-medium text-maroon hover:bg-blush-mid/70 transition-colors">5. Kids Ethnic Wear</a>
+                  <a href="#revamp" role="menuitem" class="block px-4 py-2 text-sm font-semibold text-maroon bg-blush-light/80 hover:bg-blush-mid transition-colors border-t border-gold/30 mt-1 pt-2.5">✦ Saree Revamp &amp; Restyling</a>
+                </div>
+              </div>
+
+              <a href="#gallery" class="font-serif text-[17px] font-medium text-maroon hover:text-gold-dark transition-colors">Gallery</a>
+              <a href="#about" class="font-serif text-[17px] font-medium text-maroon hover:text-gold-dark transition-colors">About Us</a>
+              <a href="#testimonials" class="font-serif text-[17px] font-medium text-maroon hover:text-gold-dark transition-colors">Testimonials</a>
+              <a href="#contact" class="font-serif text-[17px] font-medium text-maroon hover:text-gold-dark transition-colors">Contact Us</a>
+            </nav>
+
+            <!-- Right CTA Button: 'Enquire Now' + Mobile Menu Button -->
+            <div class="flex items-center gap-3">
+              <button
+                type="button"
+                onclick="openEnquiryModal()"
+                class="inline-flex items-center gap-2.5 pl-5 pr-2.5 py-2 rounded-full bg-maroon hover:bg-maroon-dark text-white font-serif text-base sm:text-[17px] font-medium tracking-wide shadow-pill transition-all duration-200 hover:-translate-y-0.5 cursor-pointer">
+                <span>Enquire Now</span>
+                <span class="w-6 h-6 rounded-full bg-gold-champagne text-maroon-dark flex items-center justify-center">
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+              </button>
+
+              <!-- Mobile Hamburger Button -->
+              <button
+                type="button"
+                id="mobileMenuBtn"
+                aria-label="Toggle Menu"
+                aria-expanded="false"
+                class="lg:hidden p-2.5 rounded-xl bg-cream border border-gold/50 text-maroon hover:bg-blush-mid transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path id="hamburgerIcon" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Slide-Down Navigation Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden mt-2 rounded-2xl bg-cream/95 backdrop-blur-md border border-gold/60 shadow-couture p-5 space-y-3">
+          <a href="#home" class="block px-4 py-2 rounded-full bg-maroon text-white font-serif text-lg font-medium text-center">Home</a>
+          <div class="border-y border-gold/30 py-2">
+            <p class="px-3 text-xs font-semibold uppercase tracking-wider text-gold-dark mb-1.5">Our Services</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-1 pl-2">
+              <a href="#services" class="py-1.5 px-2 text-sm text-maroon hover:bg-blush-mid rounded-lg">• Saree Pico &amp; Falls</a>
+              <a href="#services" class="py-1.5 px-2 text-sm text-maroon hover:bg-blush-mid rounded-lg">• Blouse Stitching</a>
+              <a href="#services" class="py-1.5 px-2 text-sm text-maroon hover:bg-blush-mid rounded-lg">• Chudidar Stitching</a>
+              <a href="#services" class="py-1.5 px-2 text-sm text-maroon hover:bg-blush-mid rounded-lg">• Long Frocks</a>
+              <a href="#services" class="py-1.5 px-2 text-sm text-maroon hover:bg-blush-mid rounded-lg">• Kids Wear</a>
+              <a href="#revamp" class="py-1.5 px-2 text-sm font-semibold text-maroon hover:bg-blush-mid rounded-lg">• Saree Revamp &amp; Restyling</a>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-2 text-center font-serif text-lg text-maroon">
+            <a href="#gallery" class="py-1.5 hover:bg-blush-mid rounded-lg">Gallery</a>
+            <a href="#about" class="py-1.5 hover:bg-blush-mid rounded-lg">About Us</a>
+            <a href="#testimonials" class="py-1.5 hover:bg-blush-mid rounded-lg">Testimonials</a>
+            <a href="#contact" class="py-1.5 hover:bg-blush-mid rounded-lg">Contact Us</a>
+          </div>
+          <div class="pt-2 border-t border-gold/30 flex items-center justify-center gap-4 text-xs font-medium text-maroon">
+            <a href="tel:7989505464" class="flex items-center gap-1.5">📞 7989505464</a>
+            <span>|</span>
+            <a href="https://wa.me/917989505464" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-emerald-700 font-semibold">💬 Chat on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===================================================================
+         4. HERO SECTION (TWO-COLUMN ASYMMETRIC SPLIT)
+         =================================================================== -->
+    <main id="home" class="relative z-20 pt-4 sm:pt-6 lg:pt-8 pb-20 sm:pb-24 lg:pb-28">
+      <div class="max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-center">
+
+          <!-- LEFT COLUMN: Brand Title, Filigree, Highlight Pill & 6-Service Card -->
+          <div class="lg:col-span-7 flex flex-col items-center text-center lg:pl-8 xl:pl-14 z-20">
+
+            <!-- Main Brand Title with Custom Stylized 'V' Flourish -->
+            <h1 class="font-serif font-semibold text-maroon text-4xl sm:text-6xl xl:text-[68px] leading-[1.06] tracking-tight">
+              Mon<span class="inline-block relative text-maroon font-bold"><svg class="inline-block w-9 h-10 sm:w-12 sm:h-14 xl:w-14 xl:h-16 -mt-2 -mx-0.5 text-maroon" viewBox="0 0 64 68" fill="none" aria-label="V">
+                <path d="M12 10 L 31 58 L 51 11 C 53 7, 57 6, 61 8" stroke="currentColor" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 10 L 18 10" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+              </svg></span>a Couture
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="font-serif italic font-medium text-maroon text-2xl sm:text-3xl xl:text-[34px] mt-1 tracking-wide">
+              Elegance in Every Detail
+            </p>
+
+            <!-- Decorative Gold Ornamental Divider Flourish -->
+            <div class="my-3.5 sm:my-4 flex items-center justify-center" aria-hidden="true">
+              <svg class="w-56 sm:w-64 h-6 text-gold" viewBox="0 0 260 24" fill="none">
+                <line x1="0" y1="12" x2="94" y2="12" stroke="url(#ornL)" stroke-width="1"/>
+                <path d="M98 12 C 104 5, 114 5, 118 12 C 114 19, 104 19, 98 12 Z" stroke="#C69B56" stroke-width="1.2"/>
+                <path d="M118 12 C 122 4, 128 2, 130 2 C 132 2, 138 4, 142 12 C 138 20, 132 22, 130 22 C 128 22, 122 20, 118 12 Z" stroke="#C69B56" stroke-width="1.3"/>
+                <circle cx="130" cy="12" r="2.2" fill="#C69B56"/>
+                <path d="M142 12 C 146 5, 156 5, 162 12 C 156 19, 146 19, 142 12 Z" stroke="#C69B56" stroke-width="1.2"/>
+                <line x1="166" y1="12" x2="260" y2="12" stroke="url(#ornR)" stroke-width="1"/>
+                <defs>
+                  <linearGradient id="ornL" x1="0" y1="12" x2="94" y2="12" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#C69B56" stop-opacity="0"/>
+                    <stop offset="1" stop-color="#C69B56"/>
+                  </linearGradient>
+                  <linearGradient id="ornR" x1="166" y1="12" x2="260" y2="12" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#C69B56"/>
+                    <stop offset="1" stop-color="#C69B56" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+
+            <!-- Boutique Description Paragraph -->
+            <p class="font-serif text-maroon-dark/90 text-lg sm:text-xl xl:text-[22px] leading-relaxed max-w-xl px-2">
+              From timeless tradition to modern elegance,<br class="hidden sm:inline" />
+              we craft, stitch and transform with love.
+            </p>
+
+            <!-- Highlight Banner Pill with Left & Right Ornate Gold Filigree Wings -->
+            <div class="mt-5 sm:mt-6 flex items-center justify-center w-full max-w-2xl px-1">
+              <!-- Left Gold Filigree Wing -->
+              <svg class="hidden sm:block w-11 h-10 text-gold -mr-1 shrink-0" viewBox="0 0 46 40" fill="none" aria-hidden="true">
+                <path d="M44 20 C 30 20, 22 10, 12 12 C 6 13, 4 18, 9 20 C 4 22, 6 27, 12 28 C 22 30, 30 20, 44 20 Z" stroke="#C69B56" stroke-width="1.3" fill="#D8B476" fill-opacity="0.22"/>
+                <path d="M36 20 L 2 20" stroke="#C69B56" stroke-width="1.2"/>
+                <circle cx="15" cy="15" r="1.5" fill="#C69B56"/>
+                <circle cx="15" cy="25" r="1.5" fill="#C69B56"/>
+              </svg>
+
+              <div class="px-6 sm:px-10 py-2.5 sm:py-3 rounded-full bg-gradient-to-r from-[#580E22] via-[#661329] to-[#580E22] border-[1.5px] border-gold-champagne shadow-pill">
+                <p class="font-serif italic font-semibold text-white text-lg sm:text-2xl xl:text-[25px] tracking-wide">
+                  Modernising old sarees is our specialty!
+                </p>
+              </div>
+
+              <!-- Right Gold Filigree Wing -->
+              <svg class="hidden sm:block w-11 h-10 text-gold -ml-1 shrink-0" viewBox="0 0 46 40" fill="none" aria-hidden="true">
+                <path d="M2 20 C 16 20, 24 10, 34 12 C 40 13, 42 18, 37 20 C 42 22, 40 27, 34 28 C 24 30, 16 20, 2 20 Z" stroke="#C69B56" stroke-width="1.3" fill="#D8B476" fill-opacity="0.22"/>
+                <path d="M10 20 L 44 20" stroke="#C69B56" stroke-width="1.2"/>
+                <circle cx="31" cy="15" r="1.5" fill="#C69B56"/>
+                <circle cx="31" cy="25" r="1.5" fill="#C69B56"/>
+              </svg>
+            </div>
+
+            <!-- Sub-caption below pill -->
+            <p class="font-serif italic font-medium text-maroon text-base sm:text-xl mt-2.5">
+              Turn your cherished sarees into beautiful new outfits.
+            </p>
+
+            <!-- HORIZONTAL 6-ITEM SERVICES STRIP CARD -->
+            <div class="mt-6 sm:mt-8 w-full max-w-[740px] rounded-2xl sm:rounded-[22px] bg-cream/95 border border-gold/75 shadow-couture backdrop-blur-sm overflow-hidden">
+              <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6">
+
+                <!-- 1. Saree Pico & Falls -->
+                <a href="#services" class="service-item group flex flex-col items-center justify-start py-4 px-2.5 border-b md:border-b-0 border-gold/30 transition-colors hover:bg-blush-light/60">
+                  <div class="medallion w-12 h-12 sm:w-13 sm:h-13 rounded-full bg-blush-mid/75 border border-gold flex items-center justify-center transition-all duration-300">
+                    <!-- Vintage Sewing Machine SVG -->
+                    <svg class="w-6 h-6 text-maroon transition-colors" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M4 18h16v2H4v-2zm14-9.5A2.5 2.5 0 0015.5 6H9a2 2 0 00-2 2v4H5.5a1.5 1.5 0 000 3H19v-2h-2V9.5c.6-.45 1-1.18 1-2zM9 8h5v4H9V8zm-1.5 7v2h-1v-2h1z"/>
+                    </svg>
+                  </div>
+                  <span class="mt-2.5 text-xs sm:text-[13px] font-medium text-maroon-dark leading-tight text-center">
+                    Saree Pico &amp;<br/>Falls
+                  </span>
+                </a>
+
+                <!-- 2. Blouse Stitching -->
+                <a href="#services" class="service-item group flex flex-col items-center justify-start py-4 px-2.5 border-b md:border-b-0 border-gold/30 transition-colors hover:bg-blush-light/60">
+                  <div class="medallion w-12 h-12 sm:w-13 sm:h-13 rounded-full bg-blush-mid/75 border border-gold flex items-center justify-center transition-all duration-300">
+                    <!-- Embroidered Blouse SVG -->
+                    <svg class="w-6 h-6 text-maroon transition-colors" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M7.5 4L3 7.5l2.2 3.3L7 9.8V19h10V9.8l1.8 1L21 7.5 16.5 4h-2.1c-.4 1.8-1.4 3.2-2.4 3.2S10 5.8 9.6 4H7.5zm4.5 5.2c1.2 0 2.2-.8 2.8-2h.7l2.6 2-.8 1.2-1.8-1V17H8.5V9.4l-1.8 1-.8-1.2 2.6-2h.7c.6 1.2 1.6 2 2.8 2z"/>
+                    </svg>
+                  </div>
+                  <span class="mt-2.5 text-xs sm:text-[13px] font-medium text-maroon-dark leading-tight text-center">
+                    Blouse<br/>Stitching
+                  </span>
+                </a>
+
+                <!-- 3. Chudidar Stitching -->
+                <a href="#services" class="service-item group flex flex-col items-center justify-start py-4 px-2.5 border-b md:border-b-0 border-gold/30 transition-colors hover:bg-blush-light/60">
+                  <div class="medallion w-12 h-12 sm:w-13 sm:h-13 rounded-full bg-blush-mid/75 border border-gold flex items-center justify-center transition-all duration-300">
+                    <!-- Chudidar / Salwar Kameez SVG -->
+                    <svg class="w-6 h-6 text-maroon transition-colors" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M9.5 3L7 5.5l1.5 2L9.5 7v8l-1 5h2l1-4 1 4h2l-1-5V7l1 .5 1.5-2L14.5 3h-1.2a1.5 1.5 0 01-2.6 0H9.5z"/>
+                    </svg>
+                  </div>
+                  <span class="mt-2.5 text-xs sm:text-[13px] font-medium text-maroon-dark leading-tight text-center">
+                    Chudidar<br/>Stitching
+                  </span>
+                </a>
+
+                <!-- 4. Long Frocks -->
+                <a href="#services" class="service-item group flex flex-col items-center justify-start py-4 px-2.5 border-b sm:border-b-0 border-gold/30 transition-colors hover:bg-blush-light/60">
+                  <div class="medallion w-12 h-12 sm:w-13 sm:h-13 rounded-full bg-blush-mid/75 border border-gold flex items-center justify-center transition-all duration-300">
+                    <!-- Flared Long Frock / Gown SVG -->
+                    <svg class="w-6 h-6 text-maroon transition-colors" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M9.5 3.5L8 6l1.5 3.5L6 20.5h12L14.5 9.5 16 6l-1.5-2.5h-1.2a1.4 1.4 0 01-2.6 0H9.5z"/>
+                    </svg>
+                  </div>
+                  <span class="mt-2.5 text-xs sm:text-[13px] font-medium text-maroon-dark leading-tight text-center">
+                    Long Frocks
+                  </span>
+                </a>
+
+                <!-- 5. Kids Wear -->
+                <a href="#services" class="service-item group flex flex-col items-center justify-start py-4 px-2.5 transition-colors hover:bg-blush-light/60">
+                  <div class="medallion w-12 h-12 sm:w-13 sm:h-13 rounded-full bg-blush-mid/75 border border-gold flex items-center justify-center transition-all duration-300">
+                    <!-- Kids Cute Ethnic Frock SVG -->
+                    <svg class="w-6 h-6 text-maroon transition-colors" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M9 5L6.5 7.5 8 9.5l1.2-.8L7.5 18.5h9L14.8 8.7l1.2.8 1.5-2L15 5h-1.4a1.7 1.7 0 01-3.2 0H9z"/>
+                    </svg>
+                  </div>
+                  <span class="mt-2.5 text-xs sm:text-[13px] font-medium text-maroon-dark leading-tight text-center">
+                    Kids Wear
+                  </span>
+                </a>
+
+                <!-- 6. Saree Revamp & Restyling -->
+                <a href="#revamp" class="service-item group flex flex-col items-center justify-start py-4 px-2.5 transition-colors hover:bg-blush-light/60">
+                  <div class="medallion w-12 h-12 sm:w-13 sm:h-13 rounded-full bg-blush-mid/75 border border-gold flex items-center justify-center transition-all duration-300">
+                    <!-- Draped Saree Silhouette SVG -->
+                    <svg class="w-6 h-6 text-maroon transition-colors" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M10 3.5L8.2 6l1.3 3.2L8 20.5h8l-1.5-10.5 2-2.8L14.5 3.5h-1.3a1.3 1.3 0 01-2.4 0H10zm-.3 6.8l4.5-2.1.4 2.4-4.9 2.2v-2.5z"/>
+                    </svg>
+                  </div>
+                  <span class="mt-2.5 text-xs sm:text-[13px] font-medium text-maroon-dark leading-tight text-center">
+                    Saree Revamp &amp;<br/>Restyling
+                  </span>
+                </a>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN: Gold-Arched Editorial Portrait + Boutique Dress Form Composition -->
+          <div class="lg:col-span-5 relative flex justify-center lg:justify-end items-end">
+            <div class="relative w-full max-w-[520px] lg:max-w-none">
+
+              <!-- Large Subtle Gold-Bordered Circular/Arched Backdrop Frame -->
+              <div class="relative mx-auto lg:mr-0 w-[330px] h-[410px] sm:w-[440px] sm:h-[510px] xl:w-[510px] xl:h-[560px] rounded-t-full rounded-b-[40px] border-2 border-gold/65 bg-gradient-to-b from-[#F9DFD4]/80 via-[#F4CFC4]/75 to-[#EFC2B6]/80 shadow-couture overflow-hidden">
+
+                <!-- Soft Rose-Flower Bokeh Ambient Accents inside Arch -->
+                <div class="absolute -left-6 top-28 w-36 h-36 rounded-full bg-rose-300/35 blur-xl pointer-events-none"></div>
+                <div class="absolute right-6 top-12 w-32 h-32 rounded-full bg-amber-100/50 blur-xl pointer-events-none"></div>
+
+                <!-- Decorative Rose Bouquet Bokeh SVG (Left Background) -->
+                <svg class="absolute left-2 top-28 w-28 h-36 opacity-50 pointer-events-none" viewBox="0 0 120 150" fill="none" aria-hidden="true">
+                  <circle cx="48" cy="52" r="22" fill="#F2B5B2" fill-opacity="0.65"/>
+                  <circle cx="48" cy="52" r="14" fill="#E39391" fill-opacity="0.55"/>
+                  <circle cx="76" cy="76" r="19" fill="#F7C7C2" fill-opacity="0.7"/>
+                  <circle cx="34" cy="84" r="17" fill="#E9A3A0" fill-opacity="0.6"/>
+                  <path d="M52 96 L 44 142 M68 94 L 58 144" stroke="#8F9E7E" stroke-width="2" stroke-opacity="0.5"/>
+                </svg>
+
+                <!-- Soft-Focus Boutique Dress Form Mannequin Wearing Maroon & Pink Lehenga (Right Background) -->
+                <div class="absolute right-1 sm:right-3 bottom-0 w-36 sm:w-44 h-[78%] opacity-90 pointer-events-none select-none" aria-hidden="true">
+                  <svg class="w-full h-full" viewBox="0 0 180 420" fill="none">
+                    <!-- Wooden Finial Neck Knob -->
+                    <ellipse cx="90" cy="24" rx="8" ry="11" fill="#8A5A36"/>
+                    <rect x="85" y="34" width="10" height="16" fill="#6E4526"/>
+                    <!-- Black Velvet Dress Form Neck & Shoulders -->
+                    <path d="M76 50 L 104 50 L 114 76 L 66 76 Z" fill="#231D20"/>
+                    <!-- Maroon Embroidered Blouse Bodice -->
+                    <path d="M52 78 C 66 72, 76 74, 90 88 C 104 74, 114 72, 128 78 L 146 122 L 130 130 L 118 106 L 115 162 L 65 162 L 62 106 L 50 130 L 34 122 Z" fill="url(#mannequinMaroon)"/>
+                    <!-- Gold Zari Embroidery Motifs on Bodice & Waistband -->
+                    <path d="M68 84 Q 90 105 112 84" stroke="#E5C68B" stroke-width="2" stroke-dasharray="3 2"/>
+                    <circle cx="80" cy="112" r="4" fill="#D8B476"/>
+                    <circle cx="100" cy="112" r="4" fill="#D8B476"/>
+                    <circle cx="90" cy="128" r="5" fill="#E5C68B"/>
+                    <rect x="64" y="156" width="52" height="12" rx="2" fill="#D8B476"/>
+                    <!-- Blush-Pink Pleated Silk Lehenga Skirt with Gold Border -->
+                    <path d="M64 168 L 116 168 L 164 415 L 16 415 Z" fill="url(#mannequinPink)"/>
+                    <!-- Pleat Fold Shadows -->
+                    <path d="M76 168 L 54 415 M90 168 L 90 415 M104 168 L 126 415" stroke="#C97E82" stroke-width="1.4" stroke-opacity="0.45"/>
+                    <!-- Gold Zari Hemline motifs -->
+                    <path d="M24 378 L 156 378" stroke="#D8B476" stroke-width="6" stroke-dasharray="8 4"/>
+                    <defs>
+                      <linearGradient id="mannequinMaroon" x1="50" y1="75" x2="130" y2="165" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#761730"/>
+                        <stop offset="1" stop-color="#4A0B1B"/>
+                      </linearGradient>
+                      <linearGradient id="mannequinPink" x1="60" y1="168" x2="120" y2="415" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#F2B4B2"/>
+                        <stop offset="0.6" stop-color="#E59898"/>
+                        <stop offset="1" stop-color="#D78082"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+
+                <!-- Main Editorial Portrait: Indian Woman in Maroon Embroidered Blouse & Blush-Pink Banarasi Silk Saree -->
+                <img
+                  src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=900&q=85"
+                  alt="Elegant Indian bride in maroon embroidered blouse and blush-pink Banarasi silk saree with gold zari borders at MonVa Couture"
+                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1583391733956-6c78276477e2?auto=format&fit=crop&w=900&q=85';"
+                  class="relative z-10 w-[86%] sm:w-[82%] h-[94%] object-cover object-top rounded-t-full mx-auto mt-6 drop-shadow-[0_12px_24px_rgba(74,11,27,0.22)]"
+                />
+
+                <!-- Subtle Warm Rose-Gold Bottom Vignette Blend -->
+                <div class="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[#F7D4CB] via-[#F7D4CB]/40 to-transparent z-20 pointer-events-none"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ===================================================================
+           5. BOTTOM CURVED MAROON WAVE FOOTER BANNER
+           =================================================================== -->
+      <div class="absolute inset-x-0 bottom-0 z-30 pointer-events-auto">
+        <!-- Sweeping S-Curve Champagne Gold Ribbon + Deep Maroon Wave SVG -->
+        <div class="relative w-full overflow-hidden leading-none">
+          <svg class="w-full h-16 sm:h-20 lg:h-24 preserve-3d" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true">
+            <!-- Warm Champagne-Gold Ribbon Trim -->
+            <path d="M0,12 C340,76 520,66 760,52 C1020,36 1240,86 1440,22 L1440,110 L0,110 Z" fill="url(#goldWaveTrim)"/>
+            <!-- Deep Maroon S-Curve Fill -->
+            <path d="M0,22 C340,84 520,74 760,60 C1020,44 1240,94 1440,30 L1440,110 L0,110 Z" fill="url(#maroonWaveFill)"/>
+            <defs>
+              <linearGradient id="goldWaveTrim" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#C69B56"/>
+                <stop offset="0.35" stop-color="#F1D6A0"/>
+                <stop offset="0.65" stop-color="#D8B476"/>
+                <stop offset="1" stop-color="#C69B56"/>
+              </linearGradient>
+              <linearGradient id="maroonWaveFill" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#560D20"/>
+                <stop offset="0.5" stop-color="#661329"/>
+                <stop offset="1" stop-color="#560D20"/>
+              </linearGradient>
+            </defs>
+          </svg>
+
+          <!-- Bottom-Left Gold Botanical Leaf Line-Art -->
+          <svg class="hidden sm:block absolute left-3 bottom-1 w-28 h-16 text-gold-champagne/80 pointer-events-none" viewBox="0 0 130 70" fill="none" aria-hidden="true">
+            <path d="M4 62 C 38 48, 72 42, 118 46" stroke="#D8B476" stroke-width="1.1"/>
+            <path d="M24 54 C 20 38, 12 24, 4 14" stroke="#D8B476" stroke-width="1"/>
+            <path d="M48 48 C 46 32, 42 18, 36 8" stroke="#D8B476" stroke-width="1"/>
+            <ellipse cx="14" cy="28" rx="7" ry="3" transform="rotate(-55 14 28)" stroke="#D8B476" stroke-width="1"/>
+            <ellipse cx="42" cy="24" rx="7" ry="3" transform="rotate(-65 42 24)" stroke="#D8B476" stroke-width="1"/>
+            <ellipse cx="74" cy="40" rx="8" ry="3" transform="rotate(-20 74 40)" stroke="#D8B476" stroke-width="1"/>
+            <ellipse cx="96" cy="52" rx="8" ry="3" transform="rotate(18 96 52)" stroke="#D8B476" stroke-width="1"/>
+          </svg>
+
+          <!-- Bottom-Right Gold Botanical Leaf Line-Art -->
+          <svg class="hidden sm:block absolute right-3 bottom-1 w-28 h-16 text-gold-champagne/80 pointer-events-none" viewBox="0 0 130 70" fill="none" aria-hidden="true">
+            <path d="M126 62 C 92 48, 58 42, 12 46" stroke="#D8B476" stroke-width="1.1"/>
+            <path d="M106 54 C 110 38, 118 24, 126 14" stroke="#D8B476" stroke-width="1"/>
+            <path d="M82 48 C 84 32, 88 18, 94 8" stroke="#D8B476" stroke-width="1"/>
+            <ellipse cx="116" cy="28" rx="7" ry="3" transform="rotate(55 116 28)" stroke="#D8B476" stroke-width="1"/>
+            <ellipse cx="88" cy="24" rx="7" ry="3" transform="rotate(65 88 24)" stroke="#D8B476" stroke-width="1"/>
+            <ellipse cx="56" cy="40" rx="8" ry="3" transform="rotate(20 56 40)" stroke="#D8B476" stroke-width="1"/>
+            <ellipse cx="34" cy="52" rx="8" ry="3" transform="rotate(-18 34 52)" stroke="#D8B476" stroke-width="1"/>
+          </svg>
+
+          <!-- Centered Banner CTA: Gold Filigree + WhatsApp Icon + 'DM us for enquiries and pricing details' -->
+          <div class="absolute inset-x-0 bottom-2 sm:bottom-3 flex items-center justify-center px-4">
+            <a href="https://wa.me/917989505464?text=Hello%20MonVa%20Couture!%20I%20would%20like%20to%20know%20more%20about%20your%20services%20and%20pricing." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 sm:gap-4 group">
+              <!-- Left Gold Filigree -->
+              <svg class="hidden md:block w-20 h-3 text-gold-champagne" viewBox="0 0 90 12" fill="none" aria-hidden="true">
+                <line x1="0" y1="6" x2="48" y2="6" stroke="#D8B476" stroke-opacity="0.6" stroke-width="1"/>
+                <polygon points="56,6 60,2 64,6 60,10" fill="#D8B476"/>
+                <polygon points="69,6 74,1.5 79,6 74,10.5" fill="#E5C68B"/>
+                <polygon points="84,6 87,3 90,6 87,9" fill="#D8B476"/>
+              </svg>
+
+              <span class="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#25D366] flex items-center justify-center shadow-md group-hover:scale-110 transition-transform shrink-0">
+                <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.758.459 3.475 1.331 4.988L2 22l5.188-1.361a9.927 9.927 0 004.843 1.26h.004c5.515 0 9.969-4.453 9.969-9.969 0-2.663-1.037-5.167-2.92-7.05A9.904 9.904 0 0012.031 2zm5.822 14.262c-.246.693-1.43 1.326-1.984 1.409-.508.076-1.151.108-1.857-.116-.428-.136-.978-.318-1.682-.622-2.96-1.278-4.893-4.258-5.041-4.455-.148-.197-1.204-1.602-1.204-3.056 0-1.454.762-2.169 1.033-2.464.271-.296.591-.37.788-.37.197 0 .394.002.566.01.182.009.426-.069.666.508.246.591.837 2.045.911 2.193.074.148.123.32.025.517-.099.197-.148.32-.296.493-.148.172-.311.385-.444.517-.148.148-.302.308-.13.604.172.296.766 1.264 1.645 2.047 1.131 1.008 2.084 1.321 2.38 1.469.296.148.468.123.64-.074.172-.197.739-.862.936-1.158.197-.296.394-.246.665-.148.271.099 1.725.813 2.021.961.296.148.493.222.566.345.074.123.074.714-.172 1.407z"/>
+                </svg>
+              </span>
+
+              <span class="font-serif italic text-white group-hover:text-gold-light transition-colors text-sm sm:text-lg lg:text-xl tracking-wide">
+                DM us for enquiries and pricing details
+              </span>
+
+              <!-- Right Gold Filigree -->
+              <svg class="hidden md:block w-20 h-3 text-gold-champagne" viewBox="0 0 90 12" fill="none" aria-hidden="true">
+                <polygon points="0,6 3,3 6,6 3,9" fill="#D8B476"/>
+                <polygon points="11,6 16,1.5 21,6 16,10.5" fill="#E5C68B"/>
+                <polygon points="26,6 30,2 34,6 30,10" fill="#D8B476"/>
+                <line x1="42" y1="6" x2="90" y2="6" stroke="#D8B476" stroke-opacity="0.6" stroke-width="1"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- =====================================================================
+       6. BELOW-THE-FOLD LUXURY BOUTIQUE SECTIONS
+       ===================================================================== -->
+
+  <!-- SECTION A: SIGNATURE BESPOKE SERVICES -->
+  <section id="services" class="py-16 sm:py-24 bg-cream relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-semibold uppercase tracking-[0.28em] text-gold-dark">Bespoke Craftsmanship</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-semibold text-maroon mt-2">Our Signature Services</h2>
+        <p class="font-serif italic text-lg sm:text-xl text-maroon/80 mt-2">
+          Precision tailoring, hand-finished embroidery, and couture fits tailored exclusively to your silhouette.
+        </p>
+        <div class="w-24 h-0.5 bg-gradient-to-r from-transparent via-gold to-transparent mx-auto mt-4"></div>
+      </div>
+
+      <!-- 6 Detailed Service Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <!-- Card 1 -->
+        <article class="rounded-3xl bg-blush-light/65 border border-gold/50 p-7 shadow-sm hover:shadow-couture transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-maroon text-gold-champagne flex items-center justify-center mb-5 shadow-md">
+              <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M4 18h16v2H4v-2zm14-9.5A2.5 2.5 0 0015.5 6H9a2 2 0 00-2 2v4H5.5a1.5 1.5 0 000 3H19v-2h-2V9.5c.6-.45 1-1.18 1-2zM9 8h5v4H9V8z"/></svg>
+            </div>
+            <h3 class="font-serif text-2xl font-semibold text-maroon">Saree Pico &amp; Falls</h3>
+            <p class="text-sm text-maroon-dark/80 mt-2.5 leading-relaxed">
+              Invisible hand-stitched falls, delicate edge pico finishing, and custom silk tassels (kuchu) that preserve the grace and drape of heirloom Kanjeevaram and Banarasi weaves.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gold/30 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-wider text-gold-dark">Same-Day Express Available</span>
+            <button type="button" onclick="openEnquiryModal('Saree Pico & Falls')" class="font-serif italic text-maroon font-semibold hover:text-gold-dark cursor-pointer">Enquire →</button>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="rounded-3xl bg-blush-light/65 border border-gold/50 p-7 shadow-sm hover:shadow-couture transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-maroon text-gold-champagne flex items-center justify-center mb-5 shadow-md">
+              <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M7.5 4L3 7.5l2.2 3.3L7 9.8V19h10V9.8l1.8 1L21 7.5 16.5 4h-2.1c-.4 1.8-1.4 3.2-2.4 3.2S10 5.8 9.6 4H7.5z"/></svg>
+            </div>
+            <h3 class="font-serif text-2xl font-semibold text-maroon">Blouse Stitching</h3>
+            <p class="text-sm text-maroon-dark/80 mt-2.5 leading-relaxed">
+              Princess-cut, padded bridal blouses, Maggam &amp; Zardosi handwork, scalloped backs, and contemporary sweetheart necklines engineered for flawless comfort.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gold/30 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-wider text-gold-dark">Bridal &amp; Festive Fits</span>
+            <button type="button" onclick="openEnquiryModal('Blouse Stitching')" class="font-serif italic text-maroon font-semibold hover:text-gold-dark cursor-pointer">Enquire →</button>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="rounded-3xl bg-blush-light/65 border border-gold/50 p-7 shadow-sm hover:shadow-couture transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-maroon text-gold-champagne flex items-center justify-center mb-5 shadow-md">
+              <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 3L7 5.5l1.5 2L9.5 7v8l-1 5h2l1-4 1 4h2l-1-5V7l1 .5 1.5-2L14.5 3h-1.2a1.5 1.5 0 01-2.6 0H9.5z"/></svg>
+            </div>
+            <h3 class="font-serif text-2xl font-semibold text-maroon">Chudidar Stitching</h3>
+            <p class="text-sm text-maroon-dark/80 mt-2.5 leading-relaxed">
+              Bespoke salwar suits, straight-cut kurtas, Patiala sets, and lined chudidars with delicate gota-patti borders and custom sleeve detailing.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gold/30 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-wider text-gold-dark">Custom Measurement</span>
+            <button type="button" onclick="openEnquiryModal('Chudidar Stitching')" class="font-serif italic text-maroon font-semibold hover:text-gold-dark cursor-pointer">Enquire →</button>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="rounded-3xl bg-blush-light/65 border border-gold/50 p-7 shadow-sm hover:shadow-couture transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-maroon text-gold-champagne flex items-center justify-center mb-5 shadow-md">
+              <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 3.5L8 6l1.5 3.5L6 20.5h12L14.5 9.5 16 6l-1.5-2.5h-1.2a1.4 1.4 0 01-2.6 0H9.5z"/></svg>
+            </div>
+            <h3 class="font-serif text-2xl font-semibold text-maroon">Long Frocks</h3>
+            <p class="text-sm text-maroon-dark/80 mt-2.5 leading-relaxed">
+              Floor-sweeping Anarkali gowns, Kali-cut festive frocks, and Indo-Western flared silhouettes crafted with rich can-can volume and flowing dupattas.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gold/30 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-wider text-gold-dark">Occasion Couture</span>
+            <button type="button" onclick="openEnquiryModal('Long Frocks')" class="font-serif italic text-maroon font-semibold hover:text-gold-dark cursor-pointer">Enquire →</button>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="rounded-3xl bg-blush-light/65 border border-gold/50 p-7 shadow-sm hover:shadow-couture transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-maroon text-gold-champagne flex items-center justify-center mb-5 shadow-md">
+              <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M9 5L6.5 7.5 8 9.5l1.2-.8L7.5 18.5h9L14.8 8.7l1.2.8 1.5-2L15 5h-1.4a1.7 1.7 0 01-3.2 0H9z"/></svg>
+            </div>
+            <h3 class="font-serif text-2xl font-semibold text-maroon">Kids Wear</h3>
+            <p class="text-sm text-maroon-dark/80 mt-2.5 leading-relaxed">
+              Soft cotton-lined pattu pavadais, festive lehengas, and adorable matching mother-daughter outfits made gentle for little ones.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gold/30 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-wider text-gold-dark">Soft Mulmul Lining</span>
+            <button type="button" onclick="openEnquiryModal('Kids Wear')" class="font-serif italic text-maroon font-semibold hover:text-gold-dark cursor-pointer">Enquire →</button>
+          </div>
+        </article>
+
+        <!-- Card 6 (Featured Specialty) -->
+        <article class="rounded-3xl bg-gradient-to-br from-[#661329] to-[#4A0B1B] text-cream border-2 border-gold p-7 shadow-couture flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-5">
+              <div class="w-14 h-14 rounded-2xl bg-gold-champagne text-maroon-dark flex items-center justify-center shadow-md">
+                <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M10 3.5L8.2 6l1.3 3.2L8 20.5h8l-1.5-10.5 2-2.8L14.5 3.5h-1.3a1.3 1.3 0 01-2.4 0H10z"/></svg>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-gold/20 border border-gold-champagne text-gold-light text-[11px] font-semibold uppercase tracking-wider">Signature Specialty</span>
+            </div>
+            <h3 class="font-serif text-2xl font-semibold text-white">Saree Revamp &amp; Restyling</h3>
+            <p class="text-sm text-cream/85 mt-2.5 leading-relaxed">
+              Breathe new life into vintage or sentimental silk sarees by transforming them into contemporary lehengas, half-sarees, cape sets, or Indo-Western gowns.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gold/35 flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-wider text-gold-champagne">1-on-1 Design Consult</span>
+            <button type="button" onclick="openEnquiryModal('Saree Revamp & Restyling')" class="font-serif italic text-gold-light font-semibold hover:underline cursor-pointer">Book Consult →</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION B: SAREE TRANSFORMATION SHOWCASE -->
+  <section id="revamp" class="py-16 sm:py-24 hero-canvas border-y border-gold/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-5 space-y-5">
+          <span class="inline-block px-4 py-1 rounded-full bg-maroon text-gold-light text-xs font-semibold uppercase tracking-widest">Heirloom Restyling</span>
+          <h2 class="font-serif text-3xl sm:text-5xl font-semibold text-maroon leading-tight">
+            Turn Cherished Sarees Into Modern Heirlooms
+          </h2>
+          <p class="text-maroon-dark/85 leading-relaxed">
+            Every saree in your wardrobe holds a story. Our master pattern-makers carefully map out zari borders, pallu motifs, and silk weaves to reimagine your sarees into breathtaking bespoke ensembles without wasting a single inch of heritage craftsmanship.
+          </p>
+          <ul class="space-y-3 text-sm font-medium text-maroon-dark">
+            <li class="flex items-center gap-3">
+              <span class="w-6 h-6 rounded-full bg-maroon text-gold-champagne flex items-center justify-center text-xs">✦</span>
+              <span>Old Kanjeevaram Saree → Bridal Pleated Lehenga &amp; Zardosi Blouse</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-6 h-6 rounded-full bg-maroon text-gold-champagne flex items-center justify-center text-xs">✦</span>
+              <span>Banarasi Silk Saree → Floor-Length Kali Anarkali Gown</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-6 h-6 rounded-full bg-maroon text-gold-champagne flex items-center justify-center text-xs">✦</span>
+              <span>Mother’s Wedding Saree → Matching Mother-Daughter Festive Sets</span>
+            </li>
+          </ul>
+          <div class="pt-2">
+            <button type="button" onclick="openEnquiryModal('Saree Transformation Consultation')" class="px-7 py-3 rounded-full bg-maroon hover:bg-maroon-dark text-white font-serif text-lg shadow-pill transition-all cursor-pointer">
+              Consult Our Stylist
+            </button>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="rounded-3xl bg-cream p-4 border border-gold/60 shadow-couture">
+            <div class="relative h-72 rounded-2xl overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=700&q=80"
+                alt="Handcrafted Silk Saree Transformed into Bridal Lehenga"
+                onerror="this.onerror=null; this.src='https://placehold.co/600x700/FCEEE6/661329?text=Saree+to+Lehenga';"
+                class="w-full h-full object-cover"
+              />
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-maroon/90 text-white text-xs font-serif italic">Banarasi Saree → Lehenga</span>
+            </div>
+            <h3 class="font-serif text-xl font-semibold text-maroon mt-4">Royal Zari Lehenga Transformation</h3>
+            <p class="text-xs text-maroon-dark/75 mt-1">Crafted using original pallu border along the flare hemline paired with a custom velvet-maroon blouse.</p>
+          </div>
+
+          <div class="rounded-3xl bg-cream p-4 border border-gold/60 shadow-couture sm:mt-8">
+            <div class="relative h-72 rounded-2xl overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=700&q=80"
+                alt="Silk Saree Restyled into Anarkali Long Frock"
+                onerror="this.onerror=null; this.src='https://placehold.co/600x700/FCEEE6/661329?text=Saree+to+Anarkali';"
+                class="w-full h-full object-cover"
+              />
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-maroon/90 text-white text-xs font-serif italic">Silk Saree → Long Frock</span>
+            </div>
+            <h3 class="font-serif text-xl font-semibold text-maroon mt-4">16-Kali Heritage Anarkali Gown</h3>
+            <p class="text-xs text-maroon-dark/75 mt-1">Seamless border alignment across waist and neckline with hand-finished latkans.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION C: CURATED LOOKBOOK / GALLERY WITH INTERACTIVE FILTERS -->
+  <section id="gallery" class="py-16 sm:py-24 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs font-semibold uppercase tracking-[0.28em] text-gold-dark">Couture Lookbook</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-semibold text-maroon mt-2">Crafted With Love</h2>
+        <p class="font-serif italic text-lg text-maroon/80 mt-2">Explore our recent custom blouses, saree revamps, and festive ensembles.</p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 mb-10" role="tablist" aria-label="Gallery Categories">
+        <button type="button" data-filter="all" class="gallery-tab active px-5 py-2 rounded-full bg-maroon text-white font-serif text-base shadow-sm transition-all cursor-pointer">All Creations</button>
+        <button type="button" data-filter="blouses" class="gallery-tab px-5 py-2 rounded-full bg-blush-light text-maroon border border-gold/50 hover:bg-blush-mid font-serif text-base transition-all cursor-pointer">Bridal Blouses</button>
+        <button type="button" data-filter="revamp" class="gallery-tab px-5 py-2 rounded-full bg-blush-light text-maroon border border-gold/50 hover:bg-blush-mid font-serif text-base transition-all cursor-pointer">Saree Revamps</button>
+        <button type="button" data-filter="frocks" class="gallery-tab px-5 py-2 rounded-full bg-blush-light text-maroon border border-gold/50 hover:bg-blush-mid font-serif text-base transition-all cursor-pointer">Long Frocks &amp; Kids</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="galleryGrid">
+        <!-- Item 1 -->
+        <div class="gallery-card group relative rounded-3xl overflow-hidden border border-gold/60 shadow-sm bg-blush-light" data-category="blouses">
+          <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80" alt="Maroon Zardosi Bridal Blouse" onerror="this.onerror=null; this.src='https://placehold.co/600x700/FCEEE6/661329?text=Bridal+Blouse';" class="w-full h-80 object-cover object-top group-hover:scale-105 transition-transform duration-500"/>
+          <div class="p-4 bg-cream border-t border-gold/30">
+            <span class="text-[11px] font-semibold uppercase tracking-wider text-gold-dark">Bridal Blouses</span>
+            <h3 class="font-serif text-xl font-semibold text-maroon">Maroon Zardosi &amp; Pearl Sleeve Blouse</h3>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="gallery-card group relative rounded-3xl overflow-hidden border border-gold/60 shadow-sm bg-blush-light" data-category="revamp">
+          <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?auto=format&fit=crop&w=700&q=80" alt="Blush Pink Silk Saree Revamp" onerror="this.onerror=null; this.src='https://placehold.co/600x700/FCEEE6/661329?text=Saree+Revamp';" class="w-full h-80 object-cover object-top group-hover:scale-105 transition-transform duration-500"/>
+          <div class="p-4 bg-cream border-t border-gold/30">
+            <span class="text-[11px] font-semibold uppercase tracking-wider text-gold-dark">Saree Revamps</span>
+            <h3 class="font-serif text-xl font-semibold text-maroon">Rosewater Silk Half-Saree Ensemble</h3>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="gallery-card group relative rounded-3xl overflow-hidden border border-gold/60 shadow-sm bg-blush-light" data-category="frocks">
+          <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=700&q=80" alt="Festive Flared Anarkali Long Frock" onerror="this.onerror=null; this.src='https://placehold.co/600x700/FCEEE6/661329?text=Long+Frock';" class="w-full h-80 object-cover object-top group-hover:scale-105 transition-transform duration-500"/>
+          <div class="p-4 bg-cream border-t border-gold/30">
+            <span class="text-[11px] font-semibold uppercase tracking-wider text-gold-dark">Long Frocks &amp; Kids</span>
+            <h3 class="font-serif text-xl font-semibold text-maroon">Temple Border Silk Long Frock</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION D: ABOUT & CLIENT TESTIMONIALS -->
+  <section id="about" class="py-16 sm:py-24 hero-canvas border-t border-gold/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
+      <div class="rounded-3xl bg-cream/95 border border-gold/70 p-8 sm:p-12 shadow-couture mb-16">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 space-y-4">
+            <span class="text-xs font-semibold uppercase tracking-[0.25em] text-gold-dark">Our Atelier Story</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-semibold text-maroon">About MonVa Couture</h2>
+            <p class="text-maroon-dark/85 leading-relaxed">
+              Founded with a passion for Indian textile heritage and contemporary tailoring precision, <strong>MonVa Couture</strong> is a boutique studio dedicated to women and children who cherish bespoke fit and timeless artistry.
+            </p>
+            <p class="text-maroon-dark/85 leading-relaxed">
+              Whether it is a bridal blouse with intricate hand-embroidery, everyday chudidars tailored to perfection, or transforming your mother’s treasured silk saree into a modern silhouette, every stitch is guided by <em>Elegance in Every Detail</em>.
+            </p>
+          </div>
+          <div class="lg:col-span-5 grid grid-cols-2 gap-4 text-center">
+            <div class="p-5 rounded-2xl bg-blush-light border border-gold/50">
+              <div class="font-serif text-3xl sm:text-4xl font-bold text-maroon">1,200+</div>
+              <div class="text-xs font-medium text-maroon-dark/75 mt-1">Bespoke Outfits Stitched</div>
+            </div>
+            <div class="p-5 rounded-2xl bg-blush-light border border-gold/50">
+              <div class="font-serif text-3xl sm:text-4xl font-bold text-maroon">450+</div>
+              <div class="text-xs font-medium text-maroon-dark/75 mt-1">Heirloom Sarees Revamped</div>
+            </div>
+            <div class="p-5 rounded-2xl bg-blush-light border border-gold/50">
+              <div class="font-serif text-3xl sm:text-4xl font-bold text-maroon">100%</div>
+              <div class="text-xs font-medium text-maroon-dark/75 mt-1">Custom Fit Guarantee</div>
+            </div>
+            <div class="p-5 rounded-2xl bg-blush-light border border-gold/50">
+              <div class="font-serif text-3xl sm:text-4xl font-bold text-maroon">4.9 ★</div>
+              <div class="text-xs font-medium text-maroon-dark/75 mt-1">Client Love &amp; Reviews</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonials -->
+      <div id="testimonials">
+        <div class="text-center max-w-xl mx-auto mb-10">
+          <span class="text-xs font-semibold uppercase tracking-[0.28em] text-gold-dark">Client Stories</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-semibold text-maroon mt-1">Words From Our Patrons</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <blockquote class="rounded-3xl bg-cream p-7 border border-gold/50 shadow-sm">
+            <div class="text-gold text-base mb-3">★★★★★</div>
+            <p class="font-serif italic text-lg text-maroon-dark leading-relaxed">
+              “MonVa Couture turned my mother’s 25-year-old Kanjeevaram saree into a stunning bridal lehenga and blouse. The fit needed zero alterations!”
+            </p>
+            <footer class="mt-4 pt-3 border-t border-gold/25 text-xs font-semibold text-maroon">
+              — Ananya Reddy, Bridal Client
+            </footer>
+          </blockquote>
+
+          <blockquote class="rounded-3xl bg-cream p-7 border border-gold/50 shadow-sm">
+            <div class="text-gold text-base mb-3">★★★★★</div>
+            <p class="font-serif italic text-lg text-maroon-dark leading-relaxed">
+              “Their blouse finishing, invisible saree falls, and attention to neckline proportions are unmatched. Truly elegance in every detail.”
+            </p>
+            <footer class="mt-4 pt-3 border-t border-gold/25 text-xs font-semibold text-maroon">
+              — Sahithi Rao, Regular Patron
+            </footer>
+          </blockquote>
+
+          <blockquote class="rounded-3xl bg-cream p-7 border border-gold/50 shadow-sm">
+            <div class="text-gold text-base mb-3">★★★★★</div>
+            <p class="font-serif italic text-lg text-maroon-dark leading-relaxed">
+              “Ordered matching festive long frocks for myself and my 4-year-old daughter. Softest cotton lining and delivered right on schedule!”
+            </p>
+            <footer class="mt-4 pt-3 border-t border-gold/25 text-xs font-semibold text-maroon">
+              — Deepika Sharma, Festive Collection
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION E: CONTACT & DIRECT WHATSAPP ENQUIRY FOOTER -->
+  <footer id="contact" class="bg-gradient-to-b from-[#661329] to-[#4A0B1B] text-cream border-t-2 border-gold pt-16 pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 pb-12 border-b border-gold/30">
+
+        <!-- Boutique Brand & Contact Info -->
+        <div class="lg:col-span-5 space-y-4">
+          <h2 class="font-serif text-3xl sm:text-4xl font-semibold text-white">
+            Mon<span class="text-gold-champagne">V</span>a Couture
+          </h2>
+          <p class="font-serif italic text-lg text-gold-light">Elegance in Every Detail</p>
+          <p class="text-sm text-cream/80 leading-relaxed max-w-md">
+            From timeless tradition to modern elegance, we craft, stitch and transform with love. Reach out via WhatsApp or phone for appointments, fabric consultations, and custom orders.
+          </p>
+          <div class="space-y-2.5 pt-2 text-sm">
+            <a href="tel:7989505464" class="flex items-center gap-3 text-white hover:text-gold-light transition-colors">
+              <span class="w-8 h-8 rounded-full bg-gold/20 border border-gold-champagne flex items-center justify-center">📞</span>
+              <span class="font-medium tracking-wide">+91 7989505464</span>
+            </a>
+            <a href="https://wa.me/917989505464?text=Hello%20MonVa%20Couture!%20I%20would%20like%20to%20enquire%20about%20stitching%20and%20pricing." target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-white hover:text-gold-light transition-colors">
+              <span class="w-8 h-8 rounded-full bg-[#25D366] text-white flex items-center justify-center">💬</span>
+              <span class="font-medium">Chat on WhatsApp (7989505464)</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Inline Quick WhatsApp Enquiry Form -->
+        <div class="lg:col-span-7">
+          <div class="rounded-3xl bg-cream text-maroon-dark p-6 sm:p-8 border border-gold shadow-couture">
+            <h3 class="font-serif text-2xl font-semibold text-maroon">Send a Quick Enquiry</h3>
+            <p class="text-xs text-maroon-dark/75 mt-1">Fill in your details below to send a pre-formatted enquiry directly to our boutique WhatsApp.</p>
+
+            <form id="footerEnquiryForm" class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="clientName" class="block text-xs font-semibold text-maroon mb-1">Your Name *</label>
+                <input type="text" id="clientName" required placeholder="e.g. Priya Sharma" class="w-full px-4 py-2.5 rounded-xl bg-blush-light/60 border border-gold/50 text-sm focus:outline-none focus:border-maroon" />
+              </div>
+              <div>
+                <label for="clientPhone" class="block text-xs font-semibold text-maroon mb-1">Phone / WhatsApp *</label>
+                <input type="tel" id="clientPhone" required placeholder="e.g. 9876543210" class="w-full px-4 py-2.5 rounded-xl bg-blush-light/60 border border-gold/50 text-sm focus:outline-none focus:border-maroon" />
+              </div>
+              <div class="sm:col-span-2">
+                <label for="serviceSelect" class="block text-xs font-semibold text-maroon mb-1">Service Required</label>
+                <select id="serviceSelect" class="w-full px-4 py-2.5 rounded-xl bg-blush-light/60 border border-gold/50 text-sm focus:outline-none focus:border-maroon">
+                  <option value="Saree Revamp & Restyling">Saree Revamp &amp; Restyling (Specialty)</option>
+                  <option value="Blouse Stitching">Designer / Bridal Blouse Stitching</option>
+                  <option value="Saree Pico & Falls">Saree Pico &amp; Falls</option>
+                  <option value="Chudidar Stitching">Chudidar Stitching</option>
+                  <option value="Long Frocks">Long Frocks &amp; Anarkalis</option>
+                  <option value="Kids Wear">Kids Ethnic Wear</option>
+                </select>
+              </div>
+              <div class="sm:col-span-2">
+                <label for="clientNotes" class="block text-xs font-semibold text-maroon mb-1">Design Notes / Occasion Date</label>
+                <textarea id="clientNotes" rows="2" placeholder="Tell us about your saree or outfit idea..." class="w-full px-4 py-2.5 rounded-xl bg-blush-light/60 border border-gold/50 text-sm focus:outline-none focus:border-maroon"></textarea>
+              </div>
+              <div class="sm:col-span-2 flex flex-wrap items-center justify-between gap-3 pt-1">
+                <span id="formStatusMsg" class="text-xs font-medium text-emerald-700 hidden">✓ Redirecting to WhatsApp...</span>
+                <button type="submit" class="ml-auto px-7 py-2.5 rounded-full bg-maroon hover:bg-maroon-dark text-white font-serif text-base font-medium shadow-pill transition-all cursor-pointer">
+                  Send via WhatsApp →
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-cream/70">
+        <p>© <span id="currentYear"></span> MonVa Couture. All rights reserved.</p>
+        <p class="font-serif italic text-sm text-gold-champagne">Stitch • Style • Transform</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       7. INTERACTIVE ENQUIRY MODAL (TRIGGERED BY 'ENQUIRE NOW' BUTTONS)
+       ===================================================================== -->
+  <div id="enquiryModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-maroon-dark/65 backdrop-blur-sm">
+    <div class="relative w-full max-w-md rounded-3xl bg-cream border-2 border-gold p-6 sm:p-8 shadow-2xl">
+      <button type="button" onclick="closeEnquiryModal()" aria-label="Close modal" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-blush-mid text-maroon hover:bg-maroon hover:text-white flex items-center justify-center transition-colors cursor-pointer">
+        ✕
+      </button>
+
+      <div class="text-center mb-5">
+        <span class="text-[11px] font-semibold uppercase tracking-[0.25em] text-gold-dark">MonVa Couture</span>
+        <h3 id="modalTitle" class="font-serif text-2xl sm:text-3xl font-semibold text-maroon mt-1">Book Your Consultation</h3>
+        <p class="font-serif italic text-sm text-maroon/80">Elegance in Every Detail</p>
+      </div>
+
+      <form id="modalEnquiryForm" class="space-y-3.5">
+        <div>
+          <label for="modalName" class="block text-xs font-semibold text-maroon mb-1">Full Name *</label>
+          <input type="text" id="modalName" required placeholder="Enter your name" class="w-full px-4 py-2.5 rounded-xl bg-blush-light/70 border border-gold/50 text-sm focus:outline-none focus:border-maroon" />
+        </div>
+        <div>
+          <label for="modalService" class="block text-xs font-semibold text-maroon mb-1">Select Service</label>
+          <select id="modalService" class="w-full px-4 py-2.5 rounded-xl bg-blush-light/70 border border-gold/50 text-sm focus:outline-none focus:border-maroon">
+            <option value="Saree Revamp & Restyling">Saree Revamp &amp; Restyling</option>
+            <option value="Saree Pico & Falls">Saree Pico &amp; Falls</option>
+            <option value="Blouse Stitching">Blouse Stitching</option>
+            <option value="Chudidar Stitching">Chudidar Stitching</option>
+            <option value="Long Frocks">Long Frocks</option>
+            <option value="Kids Wear">Kids Wear</option>
+          </select>
+        </div>
+        <div>
+          <label for="modalNotes" class="block text-xs font-semibold text-maroon mb-1">Message / Requirements</label>
+          <textarea id="modalNotes" rows="2" placeholder="Share garment details or preferred date..." class="w-full px-4 py-2.5 rounded-xl bg-blush-light/70 border border-gold/50 text-sm focus:outline-none focus:border-maroon"></textarea>
+        </div>
+        <button type="submit" class="w-full py-3 rounded-full bg-maroon hover:bg-maroon-dark text-white font-serif text-lg font-medium shadow-pill transition-all cursor-pointer">
+          Chat on WhatsApp Now
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       8. VANILLA JAVASCRIPT INTERACTIVITY
+       ===================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Dynamic Copyright Year
+      const yearEl = document.getElementById('currentYear');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+      // Desktop "Our Services" Dropdown Toggle
+      const dropdownBtn = document.getElementById('servicesDropdownBtn');
+      const dropdownMenu = document.getElementById('servicesDropdownMenu');
+      const dropdownChevron = document.getElementById('servicesChevron');
+      const dropdownWrapper = document.getElementById('servicesDropdownWrapper');
+
+      if (dropdownBtn && dropdownMenu) {
+        dropdownBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const isOpen = !dropdownMenu.classList.contains('hidden');
+          dropdownMenu.classList.toggle('hidden');
+          dropdownBtn.setAttribute('aria-expanded', String(!isOpen));
+          dropdownChevron.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
+        });
+
+        document.addEventListener('click', (e) => {
+          if (!dropdownWrapper.contains(e.target)) {
+            dropdownMenu.classList.add('hidden');
+            dropdownBtn.setAttribute('aria-expanded', 'false');
+            dropdownChevron.style.transform = 'rotate(0deg)';
+          }
+        });
+      }
+
+      // Mobile Hamburger Menu Toggle
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+          const isHidden = mobileMenu.classList.contains('hidden');
+          mobileMenu.classList.toggle('hidden');
+          mobileMenuBtn.setAttribute('aria-expanded', String(isHidden));
+        });
+
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+
+      // Gallery Category Filter
+      const filterTabs = document.querySelectorAll('.gallery-tab');
+      const galleryCards = document.querySelectorAll('.gallery-card');
+
+      filterTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const selected = tab.getAttribute('data-filter');
+
+          filterTabs.forEach(t => {
+            t.classList.remove('bg-maroon', 'text-white', 'shadow-sm');
+            t.classList.add('bg-blush-light', 'text-maroon');
+          });
+          tab.classList.remove('bg-blush-light', 'text-maroon');
+          tab.classList.add('bg-maroon', 'text-white', 'shadow-sm');
+
+          galleryCards.forEach(card => {
+            const category = card.getAttribute('data-category');
+            if (selected === 'all' || category === selected) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+        });
+      });
+
+      // Footer WhatsApp Form Handler
+      const footerForm = document.getElementById('footerEnquiryForm');
+      if (footerForm) {
+        footerForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const name = document.getElementById('clientName').value.trim();
+          const phone = document.getElementById('clientPhone').value.trim();
+          const service = document.getElementById('serviceSelect').value;
+          const notes = document.getElementById('clientNotes').value.trim();
+
+          const statusMsg = document.getElementById('formStatusMsg');
+          if (statusMsg) statusMsg.classList.remove('hidden');
+
+          const message = `Hello MonVa Couture!%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Service:* ${encodeURIComponent(service)}%0A*Notes:* ${encodeURIComponent(notes || 'Pricing & appointment enquiry')}`;
+          window.open(`https://wa.me/917989505464?text=${message}`, '_blank', 'noopener,noreferrer');
+        });
+      }
+
+      // Modal WhatsApp Form Handler
+      const modalForm = document.getElementById('modalEnquiryForm');
+      if (modalForm) {
+        modalForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const name = document.getElementById('modalName').value.trim();
+          const service = document.getElementById('modalService').value;
+          const notes = document.getElementById('modalNotes').value.trim();
+
+          const message = `Hello MonVa Couture!%0A*Name:* ${encodeURIComponent(name)}%0A*Service:* ${encodeURIComponent(service)}%0A*Details:* ${encodeURIComponent(notes || 'Please share pricing & availability.')}`;
+          window.open(`https://wa.me/917989505464?text=${message}`, '_blank', 'noopener,noreferrer');
+          closeEnquiryModal();
+        });
+      }
+    });
+
+    // Global Modal Controls
+    function openEnquiryModal(preselectedService) {
+      const modal = document.getElementById('enquiryModal');
+      const select = document.getElementById('modalService');
+      if (preselectedService && select) {
+        for (let i = 0; i < select.options.length; i++) {
+          if (select.options[i].value.toLowerCase().includes(preselectedService.toLowerCase())) {
+            select.selectedIndex = i;
+            break;
+          }
+        }
+      }
+      if (modal) modal.classList.remove('hidden');
+    }
+
+    function closeEnquiryModal() {
+      const modal = document.getElementById('enquiryModal');
+      if (modal) modal.classList.add('hidden');
+    }
+
+    // Close modal on Escape key or backdrop click
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeEnquiryModal();
+    });
+    document.getElementById('enquiryModal')?.addEventListener('click', (e) => {
+      if (e.target.id === 'enquiryModal') closeEnquiryModal();
+    });
+  </script>
+</body>
+</html>
